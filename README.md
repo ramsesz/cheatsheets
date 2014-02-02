@@ -6,6 +6,7 @@ kleine scriptjes die alles vergemakkelijken
 ### Restart services
 
 sudo /etc/init.de/transmission-daemon stop
+
 sudo /etc/init.de/apache restart
 
 
