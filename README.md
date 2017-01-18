@@ -27,7 +27,6 @@ wp db export ./filename.$(date +'%Y%m%d%H%M%S’).sql
 ```
 search-replace domain
 for more options and examples
-[http://wp-cli.org/commands/search-replace/](http://wp-cli.org/commands/search-replace/)
 http://wp-cli.org/commands/search-replace/
 
 ```shell
