@@ -32,6 +32,7 @@ find . -printf '%s %p\n'| sort -nr | head -10
 ```
 
 
+
 ## Wordpress
 ### [wp-cli](http://wp-cli.org)
 export database with current date in filename
@@ -55,6 +56,7 @@ wp search-replace --url=example.com example.com example.dev 'wp_*options' wp_blo
 ```
 
 
+
 ## PHP
 ### xdebug
 
@@ -62,6 +64,8 @@ _enable CLI xdebug debugging from cli_
 ```shell
 export XDEBUG_CONFIG="remote_enable=1 remote_mode=req remote_port=9900 remote_host=127.0.0.1 remote_connect_back=0"
 ```
+
+
 
 ## Other cheatsheets
 [Markdown cheatsheet](https:#github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
