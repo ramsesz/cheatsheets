@@ -1,5 +1,6 @@
 # cheatsheets
-little small scripts I use a lot
+little small scripts I use a lot during development
+https://www.ramsesz.be
 
 
 ## UNIX systems (linux/osx)
