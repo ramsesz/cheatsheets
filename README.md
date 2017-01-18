@@ -1,5 +1,5 @@
 # cheatsheets
-kleine scriptjes die alles vergemakkelijken
+little small scripts I use a lot
 
 
 ## UNIX systems (linux/osx)
