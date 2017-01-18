@@ -1,13 +1,6 @@
 # cheatsheets
 kleine scriptjes die alles vergemakkelijken
 
-## PHP
-### xdebug
-
-_enable CLI xdebug debugging from cli_
-```shell
-export XDEBUG_CONFIG="remote_enable=1 remote_mode=req remote_port=9900 remote_host=127.0.0.1 remote_connect_back=0"
-```
 
 ## UNIX systems (linux/osx)
 ##### currentdate
@@ -38,7 +31,7 @@ find . -printf '%s %p\n'| sort -nr | head -10
 ```
 
 
-### wordpress (wp-cli)
+## wordpress (wp-cli)
 export database with current date in filename
 ```shell
 wp db export ./filename.$(date +'%Y%m%d%H%M%S’).sql
@@ -57,6 +50,15 @@ wp search-replace 'http://www.source.be' ‚'http://www.target.be' --network
 # multisite all network
 # example.com is site which should be replaced for these columns (wp_options wp_blogs)
 wp search-replace --url=example.com example.com example.dev 'wp_*options' wp_blogs
+```
+
+
+## PHP
+### xdebug
+
+_enable CLI xdebug debugging from cli_
+```shell
+export XDEBUG_CONFIG="remote_enable=1 remote_mode=req remote_port=9900 remote_host=127.0.0.1 remote_connect_back=0"
 ```
 
 ## Other cheatsheets
