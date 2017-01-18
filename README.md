@@ -1,4 +1,4 @@
-# cheatsheets
+# [RAMSESZ](https://www.ramsesz.be) cheatsheets
 little small scripts I use a lot during development
 https://www.ramsesz.be
 
