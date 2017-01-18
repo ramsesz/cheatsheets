@@ -3,13 +3,15 @@ kleine scriptjes die alles vergemakkelijken
 
 ## PHP
 ### xdebug
-to enable CLI xdebug debugging from cli
+
+_enable CLI xdebug debugging from cli_
 ```shell
 export XDEBUG_CONFIG="remote_enable=1 remote_mode=req remote_port=9900 remote_host=127.0.0.1 remote_connect_back=0"
 ```
 
 ## UNIX systems (linux/osx)
 ##### currentdate
+_current date  shell variable_
 ```shell
 $(date +'%Y%m%d%H%M%S')
 ```
@@ -19,10 +21,26 @@ find /source -type f -exec mv --backup=numbered -t /destination {} +
 ```
 
 ### wordpress (wp-cli)
+export database with current date in filename
 ```shell
 wp db export ./filename.$(date +'%Y%m%d%H%M%S’).sql
 ```
+search-replace domain
+for more options and examples
+[http://wp-cli.org/commands/search-replace/](http://wp-cli.org/commands/search-replace/)
+http://wp-cli.org/commands/search-replace/
 
+```shell
+# single blo
+wp search-replace 'http://www.source.be' ‚'http://www.target.be'
+
+# multisite all network
+wp search-replace 'http://www.source.be' ‚'http://www.target.be' --network
+
+# multisite all network
+# example.com is site which should be replaced for these columns (wp_options wp_blogs)
+wp search-replace --url=example.com example.com example.dev 'wp_*options' wp_blogs
+```
 
 ## Other cheatsheets
-[Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[Markdown cheatsheet](https:#github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
