@@ -14,6 +14,11 @@ flatten subdirectories recursively to destination
 ```shell
 find /source -type f -exec mv --backup=numbered -t /destination {} +
 ```
+##### tar directory
+tars and gzips directory
+```shell
+tar -zcvf archive-name.tar.gz [directory-path]
+```
 ##### Find biggest directories / files
 _directories_
 ```shell
@@ -54,7 +59,6 @@ wp search-replace 'http://www.source.be' ‚'http://www.target.be' --network
 # example.com is site which should be replaced for these columns (wp_options wp_blogs)
 wp search-replace --url=example.com example.com example.dev 'wp_*options' wp_blogs
 ```
-
 
 
 ## PHP
