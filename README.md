@@ -16,9 +16,27 @@ _current date  shell variable_
 $(date +'%Y%m%d%H%M%S')
 ```
 ##### flatten folder
+flatten subdirectories recursively to destination
 ```shell
 find /source -type f -exec mv --backup=numbered -t /destination {} +
 ```
+##### Find biggest directories / files
+_directories_
+```shell
+du -a ./(path) | sort -n -r | head -n 10
+
+# current directory
+du -a . | sort -n -r | head -n 10
+```
+_files_
+```shell
+# Warning: only works with GNU find
+find /path/to/dir/ -printf '%s %p\n'| sort -nr | head -10
+
+# current directory
+find . -printf '%s %p\n'| sort -nr | head -10
+```
+
 
 ### wordpress (wp-cli)
 export database with current date in filename
