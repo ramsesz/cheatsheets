@@ -32,7 +32,8 @@ find . -printf '%s %p\n'| sort -nr | head -10
 ```
 
 
-## wordpress (wp-cli)
+## Wordpress
+### [wp-cli](http://wp-cli.org)
 export database with current date in filename
 ```shell
 wp db export ./filename.$(date +'%Y%m%d%H%M%S’).sql
