@@ -42,7 +42,7 @@ find . -printf '%s %p\n'| sort -nr | head -10
 ### [wp-cli](http://wp-cli.org)
 export database with current date in filename
 ```shell
-wp db export ./filename.$(date +'%Y%m%d%H%M%S’).sql
+wp db export ./filename.$(date +'%Y%m%d%H%M%S').sql
 ```
 search-replace domain
 for more options and examples
