@@ -19,6 +19,11 @@ tars and gzips directory
 ```shell
 tar -zcvf archive-name.tar.gz [directory-path]
 ```
+##### find how many inodes in current directory
+inodes in curren directory
+```shell
+find . -printf '%i\n' | sort -u | wc -l
+```
 ##### Find biggest directories / files
 _directories_
 ```shell
